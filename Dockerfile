@@ -16,6 +16,10 @@ RUN \
 RUN \
     apk add --no-cache nodejs && \
     ls -lha /usr/bin/sonar* && \
-    ln -s /usr/bin/sonar-scanner-run.sh /usr/bin/gitlab-sonar-scanner
+    ln -s /usr/bin/sonar-scanner-run.sh /usr/bin/gitlab-sonar-scanner    
 
+RUN \
+    apk add bash &&\
+    bash
+    
 WORKDIR /usr/bin
