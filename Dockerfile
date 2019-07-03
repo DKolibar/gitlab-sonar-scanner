@@ -19,7 +19,8 @@ RUN \
     ln -s /usr/bin/sonar-scanner-run.sh /usr/bin/gitlab-sonar-scanner    
 
 RUN \
-    apk add bash &&\
-    bash
-    
+    apk add bash
+
 WORKDIR /usr/bin
+
+ENTRYPOINT ["/bin/bash"]
