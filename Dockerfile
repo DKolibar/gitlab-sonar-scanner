@@ -23,6 +23,12 @@ RUN \
     
 RUN \
     apk add curl    
+    
+RUN \
+    apk add jq
+    
+RUN \
+    apk add grep  
 
 WORKDIR /usr/bin
 
