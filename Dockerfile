@@ -32,4 +32,4 @@ RUN \
 
 WORKDIR /usr/bin
 
-ENTRYPOINT ["/bin/bash"]
+#ENTRYPOINT ["/bin/bash"]
